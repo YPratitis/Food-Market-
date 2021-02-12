@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { StyleSheet, Text, View } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { SignIn, SignUp, SignUpAddress, SplashScreen } from '../pages';
+import { SignIn, SignUp, SignUpAddress, SplashScreen, SuccessSignUp } from '../pages';
 
 
 const Stack = createStackNavigator();
@@ -27,7 +27,12 @@ const Router = () => {
             />
             <Stack.Screen 
                 name="SignUpAddress" 
-                component={SignUpAddress } 
+                component={SignUpAddress} 
+                options={{headerShown: false}}
+            />
+            <Stack.Screen 
+                name="SuccessSignUp" 
+                component={SuccessSignUp} 
                 options={{headerShown: false}}
             />
         </Stack.Navigator>
