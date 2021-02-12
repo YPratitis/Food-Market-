@@ -3,13 +3,15 @@ import { StyleSheet, Text, View } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { Home, Order, Profile, SignIn, SignUp, SignUpAddress, SplashScreen, SuccessSignUp } from '../pages';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { BottomNavigators } from '../components';
 
 const Stack = createStackNavigator(); 
 const Tab = createBottomTabNavigator();
 
 const MainApp = () => {
     return(
-        <Tab.Navigator>
+        <Tab.Navigator 
+            tabBar={props => <BottomNavigators {...props} />}>
             <Tab.Screen 
                 name="Home"
                 component={Home}
