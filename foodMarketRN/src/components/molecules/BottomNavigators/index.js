@@ -63,7 +63,7 @@ const BottomNavigators = ({ state, descriptors, navigation }) => {
               testID={options.tabBarTestID}
               onPress={onPress}
               onLongPress={onLongPress}
-              style={{ flex: 1 }}
+              // style={{ flex: 1 }}
             >
               <Icon label={label} focus={isFocused} />
               <Text>{label}</Text>
@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     paddingTop: 15,
     paddingBottom: 13,
-    paddingHorizontal: 50, 
-    justifyContent: 'space-between',
+    paddingHorizontal: 50,
+    justifyContent: 'space-between'
     }
 })
