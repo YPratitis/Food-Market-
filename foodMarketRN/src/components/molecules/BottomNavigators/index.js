@@ -66,7 +66,6 @@ const BottomNavigators = ({ state, descriptors, navigation }) => {
               // style={{ flex: 1 }}
             >
               <Icon label={label} focus={isFocused} />
-              <Text>{label}</Text>
             </TouchableOpacity>
           );
         })}
